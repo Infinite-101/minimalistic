@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
+    <style>
+      body {
+            background: linear-gradient(to bottom right, rgb(13, 21, 15), rgb(42, 129, 42));
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .ways-to-get-involved {
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 800px;
+            text-align: center;
+            animation: slideIn 0.5s ease-in-out forwards;
+            opacity: 0; /* Start invisible */
+            transform: translateY(20px); /* Start slightly lower for animation */
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1; /* Fade in */
+                transform: translateY(0); /* Move to original position */
+            }
+        }
+
+        .ways-to-get-involved h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .ways-to-get-involved ul {
+            list-style-type: none; /* Remove default list styling */
+            padding: 0;
+            color: white;
+            text-align: left; /* Align text to the left */
+        }
+
+        .ways-to-get-involved li {
+            margin: 10px 0; /* Add space between items */
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2); /* Light background for each item */
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .ways-to-get-involved li:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="sdg-goals.html">SDG Goals</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="climate.html">Climate Action</a>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Get Involved</h1>
+           
+        </div>
+    </div>
+
+    <div class="ways-to-get-involved">
+        <h2>Ways You Can Get Involved:</h2>
+        <ul>
+            <li>1. **Environmental Conservation:** Participate in tree planting, clean-up drives, and wildlife protection.</li>
+            <li>2. **Education:** Conduct workshops, tutor underprivileged children, and raise awareness about the SDGs.</li>
+            <li>3. **Health:** Assist in health camps, mental health support, and nutrition programs.</li>
+            <li>4. **Gender Equality:** Support women’s empowerment and campaigns against gender-based violence.</li>
+            <li>5. **Poverty Alleviation:** Volunteer at food banks and provide skill training workshops.</li>
+            <li>6. **Community Development:** Help build homes and participate in disaster relief efforts.</li>
+            <li>7. **Youth Engagement:** Mentor young people and engage in youth councils focused on SDGs.</li>
+            <li>8. **Advocacy:** Lobby for policy changes and support research for sustainable development.</li>
+            <li>9. **Sustainable Practices:** Join local farming initiatives and volunteer with sustainable businesses.</li>
+            <li>10. **Cultural Preservation:** Assist in heritage projects and use art for advocacy.</li>
+        </ul>
+    </div>
+
+   
+
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.ways-to-get-involved');
+            sections.forEach(section => {
+                section.style.opacity = 1; // Set visible
+                section.style.transform = 'translateY(0)'; // Reset position
+            });
+        });
+    </script>
+</body>
+</html>
